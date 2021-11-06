@@ -34,6 +34,12 @@ div {
   padding: 5rem;
   text-align: center;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rosybrown;
+}
 a#link1 {
   background-color: deepskyblue;
   color: navy;
