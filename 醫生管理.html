@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>醫生管理</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        padding: 1rem;
+      }
+      p {
+        padding: 1rem;
+      }
+    </style>
   </head>
-  <body>
-    <!-- <header>
-      <h1>電子病歷</h1>
-      <h2>報告</h2>
-    </header> -->
+  <body style="background-color: lightskyblue">
     <nav>
       <ul>
         <li><a href="./首頁.html">首頁</a></li>
@@ -21,60 +25,17 @@
         <li><a href="./醫師登入.html">醫師登入</a></li>
       </ul>
     </nav>
-    <div class="center">
-      <form action="" method="GET" style="padding: 5rem;">
-        <table>
-          <tr>
-            <th colspan="2" align="center">
-              醫生管理
-            </th>
-          </tr>
-          <tr>
-            <td align="right">
-              <label for="date">日期：</label>
-            </td>
-            <td>
-              <input type="text" id="date" name="date" size="10" required />
-            </td>
-          </tr>
-          <tr>
-            <td align="right">
-              <label for="department">科別：</label>
-            </td>
-            <td>
-              <input type="text" id="department" name="department" size="10" required />
-            </td>
-          </tr>
-          <tr>
-            <td align="right">
-              <label for="symptom">症狀：</label>
-            </td>
-            <td>
-              <input type="text" id="symptom" name="symptom" size="10" required />
-            </td>
-          </tr>
-          <tr>
-            <td align="right">
-              <label for="prescription">處方：</label>
-            </td>
-            <td>
-              <input type="text" id="prescription" name="prescription" size="10" required />
-            </td>
-          </tr>
-          <tr>
-            <td align="right">
-              <label for="remark">備註：</label>
-            </td>
-            <td>
-              <input type="text" id="remark" name="remark" size="10" required />
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center">
-              <button type="submit">新增</button>
-              <button type="reset">清除</button>
-            </td>
-          </tr>
-    </div>
+    <form action="" method="get" style="text-align: center; padding: 3rem">
+      <h1>醫生管理</h1>
+      <hr />
+      <p>日期：<input type="text" name="date" size="10" /></p>
+      <p>科別：<input type="text" name="department" size="10" /></p>
+      <p>症狀：<input type="text" name="symptom" size="10" /></p>
+      <p>處方：<input type="text" name="prescription" size="10" /></p>
+      <p>備註：<input type="text" name="remark" size="10" /></p>
+      <p>
+        <button type="submit">新增</button><button type="reset">清除</button>
+      </p>
+    </form>
   </body>
 </html>

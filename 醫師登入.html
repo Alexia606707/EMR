@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>醫師登入</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        padding: 1rem;
+      }
+      p {
+        padding: 1rem;
+      }
+    </style>
   </head>
-  <body>
-    <!-- <header>
-      <h1>電子病歷</h1>
-      <h2>報告</h2>
-    </header> -->
+  <body style="background-color: lightsalmon">
     <nav>
       <ul>
         <li><a href="./首頁.html">首頁</a></li>
@@ -21,6 +25,12 @@
         <li><a href="./醫師登入.html">醫師登入</a></li>
       </ul>
     </nav>
-    <p>4</p>
+    <form action="" method="get" style="text-align: center; padding: 3rem">
+      <h1>醫師登入</h1>
+      <hr />
+      <p>帳號：<input type="text" name="account" size="10" /></p>
+      <p>密碼：<input type="text" name="password" size="10" /></p>
+      <p><button type="submit">登入</button></p>
+    </form>
   </body>
 </html>

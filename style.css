@@ -3,11 +3,6 @@
   margin: 0;
   /* box-sizing: border-box; */
 }
-/* header {
-  background-color: #c4c4c4;
-  width: 100%;
-  padding: 1rem;
-} */
 
 nav {
   background-color: #002b48;
@@ -24,25 +19,17 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-/* nav ul li a.left {
+
+/* .left {
   text-align: left;
 }
-nav ul li a.right {
+.right {
   text-align: right;
 } */
-div {
-  padding: 5rem;
-  text-align: center;
-}
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rosybrown;
-}
+
 a#link1 {
-  background-color: deepskyblue;
+  background-color: skyblue;
   color: navy;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid black;
 }
