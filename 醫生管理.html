@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexia606707" />
     <title>醫生管理</title>
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -19,16 +20,18 @@
     <nav>
       <ul>
         <li><a href="./首頁.html">首頁</a></li>
-        <li><a href="./民眾登入.html">病人管理</a></li>
-        <li><a href="./醫師登入.html">醫生管理</a></li>
+        <li><a href="./病人管理.html">病人管理</a></li>
+        <li><a href="./醫生管理.html">醫生管理</a></li>
         <li><a href="./民眾登入.html">民眾登入</a></li>
         <li><a href="./醫師登入.html">醫師登入</a></li>
+        <li><a href="./門診病歷.xml">組員資料</a></li>
       </ul>
     </nav>
-    <form action="" method="post" style="text-align: center; padding: 3rem">
+    <form action="" method="get" style="text-align: center; padding: 3rem">
       <h1>醫生管理</h1>
       <hr />
-      <p>日期：<input type="text" name="date" size="10" /></p>
+      <p>日期：<input type="date" name="date" /></p>
+      <p>時間：<input type="time" name="time" /></p>
       <p>科別：<input type="text" name="department" size="10" /></p>
       <p>症狀：<input type="text" name="symptom" size="10" /></p>
       <p>處方：<input type="text" name="prescription" size="10" /></p>

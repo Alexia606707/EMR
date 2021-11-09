@@ -1,0 +1,1346 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="門診病歷.xsl"?>
+<cdp:ContentPackage xsi:schemaLocation="http://www.hl7.org.tw/EMR/CDocumentPayload/v1.0 CDA_Package_V01.xsd" xmlns:cdp="http://www.hl7.org.tw/EMR/CDocumentPayload/v1.0" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cdp:ContentContainer range="0">
+    <cdp:StructuredContent Id="E7fa368be7fd444f2a25534eda0073b0d">
+<cdp:ContentPackage xsi:schemaLocation="http://www.hl7.org.tw/EMR/CDocumentPayload/v1.0 CDA_Package_V01.xsd" xmlns:cdp="http://www.hl7.org.tw/EMR/CDocumentPayload/v1.0" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cdp:ContentContainer range="0">
+    <cdp:StructuredContent Id="E7fa368be7fd444f2a25534eda0073b0d">
+      <ClinicalDocument classCode="DOCCLIN" moodCode="EVN" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3">
+        <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+        <templateId extension="121_V104.1" root="2.16.886.101.20003.20014" />
+        <id extension="00290415201803141" root="2.16.886.101.20003.20003.20038.20003" />
+        <code code="28579-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit note" />
+        <title>電子病歷課程作業</title>
+        <effectiveTime value="202111031641" />
+        <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="普通件" />
+        <languageCode code="zh-TW" />
+        <recordTarget typeCode="RCT" contextControlCode="OP">
+          <patientRole classCode="PAT">
+            <id extension="409570248" root="2.16.886.101.20003.20003.20038.20003" />
+            <patient classCode="PSN" determinerCode="INSTANCE">
+              <id extension="Fxxxxxxxx2" root="2.16.886.101.20003.20001" />
+              <name>何亭萱</name>
+              <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" />
+              <birthTime value="20020717" />
+            </patient>
+            <providerOrganization classCode="ORG" determinerCode="INSTANCE">
+              <id extension="0502080015" root="2.16.886.101.20003.20014" />
+              <name>天主教輔仁大學醫資學程</name>
+            </providerOrganization>
+          </patientRole>
+        </recordTarget>
+        <author typeCode="AUT" contextControlCode="OP">
+          <time value="20211101163402" />
+          <assignedAuthor classCode="ASSIGNED">
+            <id extension="E120XXXXX7" root="2.16.886.101.20003.20001" />
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+              <name>Wayne Ting</name>
+            </assignedPerson>
+          </assignedAuthor>
+        </author>
+        <custodian typeCode="CST">
+          <assignedCustodian classCode="ASSIGNED">
+            <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+              <id extension="0502080015" root="2.16.886.101.20003.20014" />
+              <name>天主教輔仁大學醫資學程</name>
+            </representedCustodianOrganization>
+          </assignedCustodian>
+        </custodian>
+        <componentOf typeCode="COMP">
+          <encompassingEncounter classCode="ENC" moodCode="EVN">
+            <effectiveTime value="20211103" />
+            <location typeCode="LOC">
+              <healthCareFacility classCode="SDLOC">
+                <location classCode="PLC" determinerCode="INSTANCE">
+                  <name>肝膽腸胃科</name>
+                  <addr>IC</addr>
+                </location>
+              </healthCareFacility>
+            </location>
+          </encompassingEncounter>
+        </componentOf>
+        <component typeCode="COMP" contextConductionInd="true">
+          <structuredBody classCode="DOCBODY" moodCode="EVN">
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="19146-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reference lab test results" />
+                <title>實驗室檢查紀錄</title>
+                <text>病人血型及D抗原性</text>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="883-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ABO group" />
+                    <title>血型</title>
+                    <text>O型,病人自述</text>
+                  </section>
+                </component>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="10331-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Rh" />
+                    <title>D抗原性</title>
+                    <text>UN</text>
+                  </section>
+                </component>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="11338-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of major illnesses and injuries" />
+                <title>重大傷病</title>
+                <text>NA</text>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN" negationInd="true">
+                    <code code="000000" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險重大傷病範圍" displayName="NA" />
+                  </observation>
+                </entry>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="10155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of allergies" />
+                <title>過敏史</title>
+                <text>  PYRIN,DECADRON,CLINDAMUYCIN,B-IODINE;  ALLERGY TO THOSE DRUGS;  ALLERGY TO SOME DRUGS</text>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history" />
+                <title>病人生活史</title>
+                <text>就診年齡、職業及就醫身分別</text>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="29553-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Age" />
+                    <title>就診年齡</title>
+                    <text>19歲4個月</text>
+                  </section>
+                </component>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="21847-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Usual occupation" />
+                    <title>職業</title>
+                    <text></text>
+                  </section>
+                </component>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="63513-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Are you covered by health insurance or some other kind of health care plan" />
+                    <title>就醫身分別</title>
+                    <text>健保</text>
+                  </section>
+                </component>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Hospitalizations+​Outpatient visits Narrative" />
+                <title>其他病歷敘述</title>
+                <text>
+                  <list>
+                    <item>戶籍地址:高雄市鳳山區中和里中樂街52巷1-3號4樓</item>
+                    <item>住家電話:07-7480493</item>
+                    <item>公司電話:0918120358</item>
+                    <item>行動電話:N/A</item>
+                    <item>身高:151.2</item>
+                    <item>身高單位:CM</item>
+                    <item>體重:63.5</item>
+                    <item>體重單位:KG</item>
+                    <item>教育:專科</item>
+                    <item>緊急聯絡人姓名:趙玉桂</item>
+                    <item>緊急聯絡與病人關係:夫妻</item>
+                    <item>緊急聯絡人住家電話:0986143991</item>
+                    <item>緊急聯絡人辦公電話:N/A</item>
+                    <item>緊急聯絡人手機:N/A</item>
+                    <item>婚姻:已婚</item>
+                  </list>
+                </text>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis" />
+                <title>診斷</title>
+                <text>
+                  <paragraph>K21.0胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis</paragraph>
+                  <paragraph>K27.7慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation</paragraph>
+                  <paragraph>K75.9發炎性肝疾病 Inflammatory liver disease, unspecified</paragraph>
+                  <paragraph>E78.2混合型高血脂症 Mixed hyperlipidemia</paragraph>
+                  <paragraph>R63.5體重異常增加 Abnormal weight gain</paragraph>
+                  <paragraph>E11.9第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications</paragraph>
+                  <paragraph>L30.9皮膚炎 Dermatitis, unspecified</paragraph>
+                  <paragraph>J30.89其他過敏性鼻炎 Other allergic rhinitis</paragraph>
+                  <paragraph>K59.9腸功能性疾患 Functional intestinal disorder, unspecified</paragraph>
+                  <paragraph>J04.0急性喉炎 Acute laryngitis</paragraph>
+                  <paragraph>K59.00便秘 Constipation, unspecified</paragraph>
+                  <paragraph>M25.80未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint</paragraph>
+                  <paragraph>R53.81其他之乏力 Other malaise</paragraph>
+                  <paragraph>J20.9急性支氣管炎 Acute bronchitis, unspecified</paragraph>
+                  <paragraph>B96.81歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere</paragraph><paragraph>K21.0胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis</paragraph>
+                  <paragraph>K27.7慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation</paragraph>
+                  <paragraph>K75.9發炎性肝疾病 Inflammatory liver disease, unspecified</paragraph>
+                  <paragraph>E78.2混合型高血脂症 Mixed hyperlipidemia</paragraph>
+                  <paragraph>R63.5體重異常增加 Abnormal weight gain</paragraph>
+                  <paragraph>E11.9第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications</paragraph>
+                  <paragraph>L30.9皮膚炎 Dermatitis, unspecified</paragraph>
+                  <paragraph>J30.89其他過敏性鼻炎 Other allergic rhinitis</paragraph>
+                  <paragraph>K59.9腸功能性疾患 Functional intestinal disorder, unspecified</paragraph>
+                  <paragraph>J04.0急性喉炎 Acute laryngitis</paragraph>
+                  <paragraph>K59.00便秘 Constipation, unspecified</paragraph>
+                  <paragraph>M25.80未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint</paragraph>
+                  <paragraph>R53.81其他之乏力 Other malaise</paragraph>
+                  <paragraph>J20.9急性支氣管炎 Acute bronchitis, unspecified</paragraph>
+                  <paragraph>B96.81歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere</paragraph>
+                  <paragraph>K21.0胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis</paragraph>
+                  <paragraph>K27.7慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation</paragraph>
+                  <paragraph>K75.9發炎性肝疾病 Inflammatory liver disease, unspecified</paragraph>
+                  <paragraph>E78.2混合型高血脂症 Mixed hyperlipidemia</paragraph>
+                  <paragraph>R63.5體重異常增加 Abnormal weight gain</paragraph>
+                  <paragraph>E11.9第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications</paragraph>
+                  <paragraph>L30.9皮膚炎 Dermatitis, unspecified</paragraph>
+                  <paragraph>J30.89其他過敏性鼻炎 Other allergic rhinitis</paragraph>
+                  <paragraph>K59.9腸功能性疾患 Functional intestinal disorder, unspecified</paragraph>
+                  <paragraph>J04.0急性喉炎 Acute laryngitis</paragraph>
+                  <paragraph>K59.00便秘 Constipation, unspecified</paragraph>
+                  <paragraph>M25.80未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint</paragraph>
+                  <paragraph>R53.81其他之乏力 Other malaise</paragraph>
+                  <paragraph>J20.9急性支氣管炎 Acute bronchitis, unspecified</paragraph>
+                  <paragraph>B96.81歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere</paragraph><paragraph>K21.0胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis</paragraph>
+                  <paragraph>K27.7慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation</paragraph>
+                  <paragraph>K75.9發炎性肝疾病 Inflammatory liver disease, unspecified</paragraph>
+                  <paragraph>E78.2混合型高血脂症 Mixed hyperlipidemia</paragraph>
+                </text>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K21.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K27.7" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K75.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="發炎性肝疾病 Inflammatory liver disease, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E78.2" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="混合型高血脂症 Mixed hyperlipidemia" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R63.5" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="體重異常增加 Abnormal weight gain" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E11.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="L30.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="皮膚炎 Dermatitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J30.89" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他過敏性鼻炎 Other allergic rhinitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="腸功能性疾患 Functional intestinal disorder, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J04.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性喉炎 Acute laryngitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.00" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="便秘 Constipation, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="M25.80" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R53.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他之乏力 Other malaise" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J20.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性支氣管炎 Acute bronchitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="B96.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K21.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K27.7" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K75.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="發炎性肝疾病 Inflammatory liver disease, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E78.2" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="混合型高血脂症 Mixed hyperlipidemia" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R63.5" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="體重異常增加 Abnormal weight gain" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E11.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="L30.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="皮膚炎 Dermatitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J30.89" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他過敏性鼻炎 Other allergic rhinitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="腸功能性疾患 Functional intestinal disorder, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J04.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性喉炎 Acute laryngitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.00" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="便秘 Constipation, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="M25.80" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R53.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他之乏力 Other malaise" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J20.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性支氣管炎 Acute bronchitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="B96.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K21.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K27.7" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K75.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="發炎性肝疾病 Inflammatory liver disease, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E78.2" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="混合型高血脂症 Mixed hyperlipidemia" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R63.5" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="體重異常增加 Abnormal weight gain" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="E11.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="L30.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="皮膚炎 Dermatitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J30.89" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他過敏性鼻炎 Other allergic rhinitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="腸功能性疾患 Functional intestinal disorder, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J04.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性喉炎 Acute laryngitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K59.00" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="便秘 Constipation, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="M25.80" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="R53.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="其他之乏力 Other malaise" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="J20.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="急性支氣管炎 Acute bronchitis, unspecified" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="B96.81" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K21.0" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K27.7" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation" />
+                  </observation>
+                </entry>
+                <entry>
+                  <observation classCode="COND" moodCode="EVN">
+                    <code code="K75.9" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD-10-CM" displayName="發炎性肝疾病 Inflammatory liver disease, unspecified" />
+                  </observation>
+                </entry>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="19824-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Return visit conditions" />
+                <title>病情摘要</title>
+                <text>主觀描述、客觀描述及評估</text>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="61150-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subjective" />
+                    <title>主觀描述</title>
+                    <text>
+去病史:PSY ; 家族史:無;  藥物過敏史:PYRIN,DECADRON,CLINDAMUYCIN,B-IODINE;steroid; TALEX;
+SULFADRUG- mens irregularlly 旅遊史:無;  職業:工 抽菸:無  喝
+酒:無   嚼檳
+榔:無
+身高:160 CM  體重:65 KG  血
+型:B
+ITCHY THROAT, FB SENSATION IN THROAT FOLLOWED BY HARD DRY
+COUGH, DOE, UPPER ABD PAIN, FULLNESS FOR MS WITH AE RECENTLY
+AND EVEN NAUSEA, VOMITING ELICITED RECENTLY ALBEIT PPI
+--&gt; PRIOR IMPROVED BY SELF PAY PPI; BUT OKWE SEEMS WORSENING
+ITCHY SKIN RASHES RECENTLY; TALEX INDUCING ITCHY SKIN RASHES
+--&gt;SUGGEST TAPERING IF GOOD CONTROL OF GERD. SHE REFUSED TO
+DC TALEX
+POOR RESPONSE TO RICH GRADUALLY--&gt;IMPROVED BY PANHO + prn use
+of kowell
+ROUTINE CHECK IN THIS OCT. SONO: MODERATE FATTY LIVER
+SKIN RASH OFF AND ON WITH AE RECENTLY
+TACHYCARDIA, BW LOSS 1 KG, FATIGUE FOR 1 M
+DRY COUGH FOR DAYS
+                    </text>
+                  </section>
+                </component>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="61149-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Objective" />
+                    <title>客觀描述</title>
+                    <text>
+BP: stable at home
+COARSE BS, NO R
+103/01/13:Free T4(EIA/LIA)=0.89;TSH(EIA/LIA)=2.2769;HBsAg
+(EIA/LIA)=Nonreactive(0.02);HCV Ab (EIA/LIA)=Nonreactive
+(0.05);HbAlc (Hemoglobin A1c)=6.5;Cholesterol=185;TG=
+179;Glucose AC-blood=103;S-GOT/AST=43;S-GPT/ALT=70;HDL-C
+(Highdensity lipoprotein cholesterol)=30;LDL-C (Lowdensity
+lipoprotein cholesterol)=128
+1050920 EGD: 1. Probable short segment barretts esophagus
+2. Gastric polyps, up to 0.4 cm
+3. Erosive gastritis with SRH, antrum
+104/03/17:Stool iFOB 檢查結果(EIA)=陰性;Stool iFOB 檢驗數值
+(EIA)=&lt;7
+104/10/27:Cholesterol=225;TG=283;Glucose AC-blood=
+198;Creatinine-blood=0.6;eGFR=112.5;S-GPT/ALT=85;HDL-C
+(Highdensity lipoprotein cholesterol)=28;LDL-C (Lowdensity
+lipoprotein cholesterol)=156;PRO=Negative;GLU=Negative;HbAlc
+(Hemoglobin A1c)=8.7
+105/01/05:Glucose AC-blood=140;Creatinine-blood=0.5;eGFR=
+138.8;S-GOT/AST=26;S-GPT/ALT=43;CPK=42;HbAlc (Hemoglobin A1c)
+=7.3
+3/26, 16 FBS: 137, ALT: 55, CHOL/TG/HDL/LDL: 177/285/37/114;
+HBA1C: 7.6; UR: OK
+105/06/21:Glucose AC-blood=112;Creatinine-blood=0.6;eGFR=
+112.0;S-GPT/ALT=37;Creatinine-urine=53;ACR=28.3;UPCR=
+94.34;Total protein-urine=5;Microalbumin (Nephelometry)=
+1.5;HbAlc (Hemoglobin A1c)=7.5 (NO USE CTL, LIPIDOFF FOR
+ABOUT 1 M)
+6/23, 16 無糖尿病視網膜病變,一年追蹤一次
+9/20, 16 CHOL/TG/HDL/LDL: 263/186/38/200; FBS: 144, UA, CR:
+OK; ALT: 67, HBA1C: 7.4
+105/10/15:Glucose AC-blood=145;S-GOT/AST=67;S-GPT/ALT=88;CPK=
+36
+105/12/03:Glucose AC-blood=145;Creatinine-blood=0.5;eGFR=
+138.3;S-GOT/AST=97;S-GPT/ALT=103;CPK=43
+105/12/05:HbAlc (Hemoglobin A1c)=7.7
+106/02/27:HbAlc (Hemoglobin A1c)=9.0
+106/02/25:Cholesterol=214;TG=272;Glucose AC-blood=
+162;Creatinine-blood=0.5;eGFR=138.3;S-GOT/AST=47;S-GPT/ALT=
+58;HDL-C (Highdensity lipoprotein cholesterol)=38;LDL-C
+(Lowdensity lipoprotein cholesterol)=147
+106/02/13:Cholesterol=186;TG=359;HDL-C (Highdensity
+lipoprotein cholesterol)=32;LDL-C (Lowdensity lipoprotein
+cholesterol)=120
+106/02/14:HbAlc (Hemoglobin A1c)=8.8
+1060422 FBS: 165, CR: OK; ALT: 87, HBA1C: 8.8
+1060519 無糖尿病視網膜病變,一年追蹤一次
+106/04/25:Stool iFOB 檢查結果(EIA)=陰性;Stool iFOB 檢驗數值
+(EIA)=8
+106/05/08:Cholesterol=199;TG=409;Glucose-blood=
+151;Creatinine-blood=0.6;eGFR=111.6;S-GOT/AST=87;S-GPT/ALT=
+100;HDL-C (Highdensity lipoprotein cholesterol)=36;Urine
+protein=Negative;Cholesterol=206;TG=502;Glucose AC-blood=
+202;S-GOT/AST=83;S-GPT/ALT=97;HDL-C (Highdensity lipoprotein
+cholesterol)=31;LDL-C (Lowdensity lipoprotein cholesterol)=
+108;HbAlc (Hemoglobin A1c)=8.8
+1060613 US: 1. Mild-moderate fatty liver
+2. Left renal cortical cyst 13.5mm, low pole
+106/06/27:TG=168;Glucose AC-blood=165;S-GOT/AST=44;S-GPT/ALT=
+65;CPK=49; EGD: 1. Probable short segment barretts esophagus
+2. Gastric polyps, up to 0.4 cm   3. Antral gastritis
+106/08/04:Cholesterol=214;TG=350;HDL-C (Highdensity
+lipoprotein cholesterol)=34;LDL-C (Lowdensity lipoprotein
+cholesterol)=126;Uric Acid-blood=5.0;HbAlc (Hemoglobin A1c)=
+8.3
+106/09/16:Cholesterol=289;TG=306;Glucose AC-blood=
+159;Creatinine-blood=0.6;eGFR=111.6;S-GPT/ALT=88;HDL-C
+(Highdensity lipoprotein cholesterol)=37;LDL-C (Lowdensity
+lipoprotein cholesterol)=211
+106/09/18:HbAlc (Hemoglobin A1c)=8.2
+106/10/17:Glucose AC-blood=179;S-GOT/AST=36;S-GPT/ALT=39;CPK=
+119
+106/11/04:Glucose AC-blood=166;Ca-blood=9.6;Na-blood=136;K-
+blood=3.6;S-GOT/AST=32;S-GPT/ALT=35; BR: OK
+106/11/06:Free T4(EIA/LIA)=0.80;TSH(EIA/LIA)=2.2316;Cortisol-
+上午(EIA/LIA)=13.1
+106/11/08:ACTH(EIA/LIA)=16.1
+1070125 無糖尿病視網膜病變
+107/02/03:Cholesterol=155;TG=162;Glucose AC-blood=
+133;Creatinine-blood=0.4;eGFR=178.2;S-GPT/ALT=18;HDL-C
+(Highdensity lipoprotein cholesterol)=39;LDL-C (Lowdensity
+lipoprotein cholesterol)=94;PRO=Negative;GLU=Negative
+107/02/05:HbAlc (Hemoglobin A1c)=7.5
+1070313 EGD: 1. Probable short segment barretts esophagus
+
+2. Gastric polyps, up to 0.2 cm  3. Gastritis
+幽門曲狀桿菌試驗:陽性
+                    </text>
+                  </section>
+                </component>
+                <component typeCode="COMP" contextConductionInd="true">
+                  <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="11494-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial assessment note" />
+                    <title>評估</title>
+                    <text>
+K21.0   _胃食道逆流性疾病併食道炎 Gastro-esophageal reflux disease with esophagitis||K27.7   _慢性消化性潰瘍，部位未明示，未伴有出血或穿孔 Chronic peptic ulcer, site unspecified, without hemorrhage or perforation||K75.9   _發炎性肝疾病 Inflammatory liver disease, unspecified||E78.2   _混合型高血脂症 Mixed hyperlipidemia||R63.5   _體重異常增加 Abnormal weight gain||E11.9   _第二型糖尿病，未伴有併發症 Type 2 diabetes mellitus without complications||L30.9   _皮膚炎 Dermatitis, unspecified||J30.89  _其他過敏性鼻炎 Other allergic rhinitis||K59.9   _腸功能性疾患 Functional intestinal disorder, unspecified||J04.0   _急性喉炎 Acute laryngitis||K59.00  _便秘 Constipation, unspecified||M25.80  _未明示關節部位，其他特定關節疾患 Other specified joint disorders, unspecified joint||R53.81  _其他之乏力 Other malaise||J20.9   _急性支氣管炎 Acute bronchitis, unspecified||B96.81  _歸類於他處幽門桿菌所致的疾病 Helicobacter pylori [H. pylori] as the cause of diseases classified elsewhere
+治療計畫：REUSE OF CRESTOR, BUT FU SKIN CONDITION, LFT CLOSELY; LS
+MODIFICAITON; CHECK PR QD; SHE FAVORED SELF PAY HP
+ERADICATION; X2MS
+                    </text>
+                  </section>
+                </component>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure" />
+                <title>處置項目</title>
+                <text>
+                  <table>
+                    <thead>
+<tr>
+  <td>項次</td>
+  <td>處置代碼</td>
+  <td>處置名稱</td>
+  <td>頻率</td>
+  <td>數量</td>
+  <td>單位</td>
+  <td>部位</td>
+  <td>註記</td>
+</tr>
+                    </thead>
+                    <tbody>
+<tr>
+  <td>1</td>
+  <td>NCS01A2003ZZ</td>
+  <td>安全遮蔽防護式注射針(含注射筒) 3ML 23G 1 IN</td>
+  <td>　</td>
+  <td>1</td>
+  <td>EA</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>09015C</td>
+  <td>Creatinine-Blood CRIN 肌酐（血）</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>09005C</td>
+  <td>Glucose-Blood 飯前血糖</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>09026C</td>
+  <td>S-GPT/ALT 血清麩胺酸丙酮酸轉氨基脢</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>09006C</td>
+  <td>HbA1c (Hemoglobin A1c) 醣化血紅素</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>00171A</td>
+  <td>開具慢性病連續處方並支付本院自行調劑(小於28天)</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>05209A</td>
+  <td>慢性病方給藥28天以上</td>
+  <td>　</td>
+  <td>1</td>
+  <td>次</td>
+  <td></td>
+  <td></td>
+</tr>
+                    </tbody>
+                  </table>
+                </text>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="1" />
+                    <code code="NCS01A2003ZZ" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="安全遮蔽防護式注射針(含注射筒) 3ML 23G 1 IN" />
+                    <text></text>
+                    <targetSiteCode code="1" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="1" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="EA" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="2" />
+                    <code code="09015C" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="Creatinine-Blood CRIN 肌酐（血）" />
+                    <text></text>
+                    <targetSiteCode code="2" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="2" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="3" />
+                    <code code="09005C" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="Glucose-Blood 飯前血糖" />
+                    <text></text>
+                    <targetSiteCode code="3" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="3" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="4" />
+                    <code code="09026C" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="S-GPT/ALT 血清麩胺酸丙酮酸轉氨基脢" />
+                    <text></text>
+                    <targetSiteCode code="4" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="4" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="5" />
+                    <code code="09006C" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="HbA1c (Hemoglobin A1c) 醣化血紅素" />
+                    <text></text>
+                    <targetSiteCode code="5" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="5" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="6" />
+                    <code code="00171A" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="開具慢性病連續處方並支付本院自行調劑(小於28天)" />
+                    <text></text>
+                    <targetSiteCode code="6" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="6" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+                <entry>
+                  <procedure classCode="PROC" moodCode="RQO" negationInd="false">
+                    <id extension="7" />
+                    <code code="05209A" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保檢驗項目代碼" displayName="慢性病方給藥28天以上" />
+                    <text></text>
+                    <targetSiteCode code="7" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健康保險局檢查部位" displayName="7" />
+                    <precondition typeCode="PRCN">
+<criterion classCode="OBS" moodCode="EVN.CRT">
+  <code code="27669-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Visit frequency" />
+  <text>　</text>
+  <value xsi:type="PQ" value="1" unit="次" />
+</criterion>
+                    </precondition>
+                  </procedure>
+                </entry>
+              </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+              <section classCode="DOCSECT" moodCode="EVN">
+                <code code="29551-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication prescribed" />
+                <title>處方</title>
+                <text>
+                  <table>
+                    <thead>
+<tr>
+  <td>項次</td>
+  <td>處方箋種類註記</td>
+  <td>藥品代碼</td>
+  <td>藥品商品名稱</td>
+  <td>藥品學名</td>
+  <td>劑型</td>
+  <td>劑量</td>
+  <td>劑量單位</td>
+  <td>頻率</td>
+  <td>給藥途徑</td>
+  <td>給藥日數</td>
+  <td>給藥總量</td>
+  <td>給藥總量單位</td>
+  <td>實際給藥總量</td>
+  <td>實際給藥總量單位</td>
+  <td>磨粉註記</td>
+  <td>註記</td>
+</tr>
+                    </thead>
+                    <tbody>
+<tr>
+  <td>1</td>
+  <td>CHR</td>
+  <td>AB56774100</td>
+  <td>PANHO ENTERIC FC 40MG</td>
+  <td>PANTOPRAZOLE 40MG</td>
+  <td>ORTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>QDPMAC</td>
+  <td>PO</td>
+  <td>28</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>CHR</td>
+  <td>AC481301G0</td>
+  <td>C.T.L. XR  ◇500MG</td>
+  <td>METFORMIN HCL</td>
+  <td>ERTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>QDPC</td>
+  <td>PO</td>
+  <td>28</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>CHR</td>
+  <td>BC24131100</td>
+  <td>CRESTOR 10MG</td>
+  <td>Rosuvastatin Calcium</td>
+  <td>ORTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>QDPC</td>
+  <td>PO</td>
+  <td>28</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>28</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>GENRL</td>
+  <td>NC02967209</td>
+  <td>Diphenhydramine(Vena) 30mg/1mL</td>
+  <td>Diphenhydramine HCl</td>
+  <td>IVSOL</td>
+  <td>1</td>
+  <td>AMP</td>
+  <td>STAT</td>
+  <td>IM</td>
+  <td>1</td>
+  <td>1</td>
+  <td>AMP</td>
+  <td>1</td>
+  <td>AMP</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>CHR</td>
+  <td>AC399281G0</td>
+  <td>Kowell Tablet</td>
+  <td>AZULENE WATER SOLUBLE+Mg Al SILICATE</td>
+  <td>ORTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>PRN</td>
+  <td>PO</td>
+  <td>28</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>GENRL</td>
+  <td>AC25866100</td>
+  <td>AMOXICILLIN 500MG</td>
+  <td>AMOXICILLIN</td>
+  <td>ORCAP</td>
+  <td>2</td>
+  <td>CAP</td>
+  <td>BIDPC</td>
+  <td>PO</td>
+  <td>7</td>
+  <td>28</td>
+  <td>CAP</td>
+  <td>28</td>
+  <td>CAP</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>GENRL</td>
+  <td>AC46638100</td>
+  <td>KlaRITH FC 500MG(抗2)</td>
+  <td>CLARITHROMYCIN</td>
+  <td>ORTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>BIDPC</td>
+  <td>PO</td>
+  <td>7</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>GENRL</td>
+  <td>BC23221100</td>
+  <td>NEXIUM 鋁箔盒裝錠劑 40MG</td>
+  <td>ESOMEPRAZOLE</td>
+  <td>ORTAB</td>
+  <td>1</td>
+  <td>TAB</td>
+  <td>BIDAC</td>
+  <td>PO</td>
+  <td>7</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>14</td>
+  <td>TAB</td>
+  <td>N</td>
+  <td>　</td>
+</tr>
+                    </tbody>
+                  </table>
+                </text>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="1" />
+                    <code code="AB56774100" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="PANTOPRAZOLE 40MG" />
+                    <text>　</text>
+                    <repeatNumber value="28" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ORTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>PANHO ENTERIC FC 40MG</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>PANTOPRAZOLE 40MG</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="CHR" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="Chronic" />
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">QDPMAC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="2" />
+                    <code code="AC481301G0" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="METFORMIN HCL" />
+                    <text>　</text>
+                    <repeatNumber value="28" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ERTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Extended Release Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>C.T.L. XR  ◇500MG</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>METFORMIN HCL</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="CHR" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="Chronic" />
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">QDPC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="3" />
+                    <code code="BC24131100" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="Rosuvastatin Calcium" />
+                    <text>　</text>
+                    <repeatNumber value="28" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ORTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>CRESTOR 10MG</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>Rosuvastatin Calcium</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="CHR" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="Chronic" />
+  <independentInd value="false" />
+  <quantity value="28" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">QDPC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="4" />
+                    <code code="NC02967209" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="Diphenhydramine HCl" />
+                    <text>　</text>
+                    <repeatNumber value="1" />
+                    <routeCode code="IM" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="IM" />
+                    <doseQuantity value="1" unit="AMP" />
+                    <administrationUnitCode code="IVSOL" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Intravenous Solution" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>Diphenhydramine(Vena) 30mg/1mL</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="1" unit="AMP" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>Diphenhydramine HCl</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="GENRL" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="General" />
+  <independentInd value="false" />
+  <quantity value="1" unit="AMP" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">STAT</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="5" />
+                    <code code="AC399281G0" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="AZULENE WATER SOLUBLE+Mg Al SILICATE" />
+                    <text>　</text>
+                    <repeatNumber value="28" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ORTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>Kowell Tablet</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>AZULENE WATER SOLUBLE+Mg Al SILICATE</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="CHR" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="Chronic" />
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">PRN</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="6" />
+                    <code code="AC25866100" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="AMOXICILLIN" />
+                    <text>　</text>
+                    <repeatNumber value="7" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="2" unit="CAP" />
+                    <administrationUnitCode code="ORCAP" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Capsule" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>AMOXICILLIN 500MG</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="28" unit="CAP" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>AMOXICILLIN</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="GENRL" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="General" />
+  <independentInd value="false" />
+  <quantity value="28" unit="CAP" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">BIDPC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="7" />
+                    <code code="AC46638100" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="CLARITHROMYCIN" />
+                    <text>　</text>
+                    <repeatNumber value="7" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ORTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>KlaRITH FC 500MG(抗2)</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>CLARITHROMYCIN</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="GENRL" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="General" />
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">BIDPC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+                <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                    <id extension="8" />
+                    <code code="BC23221100" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品代碼" displayName="ESOMEPRAZOLE" />
+                    <text>　</text>
+                    <repeatNumber value="7" />
+                    <routeCode code="PO" codeSystem="2.16.886.101.20003.20014" codeSystemName="全民健保藥品使用途徑代碼" displayName="PO" />
+                    <doseQuantity value="1" unit="TAB" />
+                    <administrationUnitCode code="ORTAB" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm" displayName="Oral Tablet" />
+                    <consumable>
+<manufacturedProduct>
+  <manufacturedLabeledDrug>
+    <name>NEXIUM 鋁箔盒裝錠劑 40MG</name>
+  </manufacturedLabeledDrug>
+</manufacturedProduct>
+                    </consumable>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="RQO">
+  <text>N</text>
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+  <product>
+    <manufacturedProduct>
+      <manufacturedMaterial>
+        <name>ESOMEPRAZOLE</name>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </product>
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<supply classCode="SPLY" moodCode="PRP">
+  <code code="GENRL" codeSystem="2.16.840.1.113883.11.17449" codeSystemName="ActMedicalServiceCode" displayName="General" />
+  <independentInd value="false" />
+  <quantity value="14" unit="TAB" />
+</supply>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN" negationInd="false">
+  <code code="52810-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Current medication, Frequency" />
+  <text xsi:type="ST">BIDAC</text>
+</act>
+                    </entryRelationship>
+                  </substanceAdministration>
+                </entry>
+              </section>
+            </component>
+          </structuredBody>
+        </component>
+      </ClinicalDocument>
+    </cdp:StructuredContent>
+  </cdp:ContentContainer>
+</cdp:ContentPackage>
+    </cdp:StructuredContent>
+  </cdp:ContentContainer>
+</cdp:ContentPackage>
